@@ -1,1 +1,3 @@
 # fetchApi
+
+async await project
