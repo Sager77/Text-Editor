@@ -10,6 +10,9 @@
 </head>
 
 <body>
+
+    <!-- navebar -->
+
     <nav class="navbar navbar-expand-lg  bg-primary navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Texteditor</a>
@@ -48,6 +51,9 @@
         </div>
     </nav>
     <br>
+
+    <!-- text area and button -->
+
     <div class="container">
         <div class="row">
             <div class="col-md-8">
@@ -56,10 +62,10 @@
                         rows="10"></textarea>
                 </div>
                 <button type="button" class="btn btn-primary" onclick="uppertext()">Upper Case</button>
-
+                <button type="button" class="btn btn-outline-primary" onclick="findText()">Capitilize</button>             
                 <br><br>
                 <h2>Get Your Output here!</h2>
-                <p id="display"></p>
+                <p id="display" class="text-bg-info"></p>
             </div>
             <div class="col-md-4 border border-light-subtle">
                 <br>
@@ -68,14 +74,13 @@
                         <input class="form-control form-control-sm" id="textbox1" type="text" placeholder="replace to"
                             aria-label=".form-control-sm example">
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 pt-3 pt-sm-0">
                         <input class="form-control form-control-sm" id="textbox2" type="text" placeholder="replace with"
                             aria-label=".form-control-sm example">
                     </div>
                 </div>
                 <br>
                 <button type="button" class="btn btn-outline-primary" onclick="findText()">Replace</button>
-
             </div>
         </div>
 
