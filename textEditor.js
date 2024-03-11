@@ -6,7 +6,7 @@ let showText = document.getElementById("display");
 let text1 = document.getElementById("textbox1");
 let text2 = document.getElementById("textbox2");
 let totalChar = document.getElementById("totalChar");
-var upper, change;
+var upper = null, change;
 
 function clicked() {
     countCharacters();
@@ -15,7 +15,7 @@ function clicked() {
 
 function uppertext() {
     if (upper == null) {
-        text.value = "Please Enter Text Here";
+        text.value = "Please Enter Text🙏🏻";
     } else {
         change = upper.toUpperCase();
         showText.innerHTML = change;
@@ -32,6 +32,8 @@ function capitalizetext() {
     let words = text.value.split(' ');
 
     for (let i = 0; i < words.length; i++) {
+        words[i] = words[i].toLowerCase();
+        // words[i] = words[i].toLowerCase();
         words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
     }
 
